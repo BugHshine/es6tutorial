@@ -319,7 +319,7 @@ if (true) {
 ```javascript
 function f() { console.log('I am outside!'); }
 (function () {
-  if (false) {
+  if (true) {
     // 重复声明一次函数f
     function f() { console.log('I am inside!'); }
   }
@@ -335,7 +335,7 @@ function f() { console.log('I am outside!'); }
 function f() { console.log('I am outside!'); }
 (function () {
   function f() { console.log('I am inside!'); }
-  if (false) {
+  if (true) {
   }
   f();
 }());
